@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia GitFlow</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Estrategia GitFlow - DevSecops</h1>
+    </header>
+    <main>
+        <section>
+            <h2>¿Qué es GitFlow?</h2>
+            <p>GitFlow es un modelo de flujo de trabajo para Git que define un conjunto estricto de reglas de
+                ramificación diseñadas para la gestión de versiones de software. Utiliza ramas específicas para
+                diferentes propósitos, lo que facilita el desarrollo paralelo, la preparación de versiones y el
+                mantenimiento de correcciones rápidas en producción.</p>
+            <div>
+                <img src="image/GitFlow.png" alt="GitFlow">
+            </div>
+        </section>
+        <section>
+            <h2>Ramas Principales</h2>
+            <ul>
+                <li><strong>master:</strong> Rama principal de producción, siempre estable.</li>
+                <li><strong>develop:</strong> Rama principal de desarrollo, donde se integran las nuevas
+                    funcionalidades.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Ramas de Soporte</h2>
+            <ul>
+                <li><strong>feature:</strong> Ramas para el desarrollo de nuevas funcionalidades.</li>
+                <li><strong>release:</strong> Ramas para la preparación de nuevas versiones.</li>
+                <li><strong>hotfix:</strong> Ramas para la corrección de errores en producción.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Flujo de Trabajo</h2>
+            <ol>
+                <li>Se crea una rama <code>feature</code> a partir de <code>develop</code>.</li>
+                <li>Se desarrollan las funcionalidades en la rama <code>feature</code>.</li>
+                <li>Se fusiona la rama <code>feature</code> con <code>develop</code>.</li>
+                <li>Se crea una rama <code>release</code> a partir de <code>develop</code>.</li>
+                <li>Se realizan las últimas correcciones y pruebas en la rama <code>release</code>.</li>
+                <li>Se fusiona la rama <code>release</code> con <code>master</code> y <code>develop</code>.</li>
+                <li>Se crea una etiqueta (tag) en <code>master</code> para la versión.</li>
+                <li>Se crea una rama <code>hotfix</code> a partir de <code>master</code>.</li>
+                <li>Se corrige el error en la rama <code>hotfix</code>.</li>
+                <li>Se fusiona la rama <code>hotfix</code> con <code>master</code> y <code>develop</code>.</li>
+                <li>Se crea una etiqueta (tag) en <code>master</code> para la corrección.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Asistencia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Fecha de Capacitación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <!--Plantilla-->
+                    <tr>
+                        <td>[Nombre]</td>
+                        <td>[Correo electrónico]</td>
+                        <td>[dd-mm-yyyy]</td>
+                    </tr>
+
+                    <!--Usuarios que han asistido a la capacitación-->
+
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="footer-images">
+        <img src="image/Compensar.png" alt="Compensar">
+        <img src="image/DevSecOps.png" alt="DevSecOps">
+        <img src="image/Capitulo de desarrollo (color).png" alt="Capítulo de desarrollo">
+        <img src="image/Capitulo de desarrollo (blanco).png" alt="Capítulo de desarrollo">
+    </div>
+</footer>
+</html>

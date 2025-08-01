@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+}
+
+header {
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #ff5722;
+}
+
+ul, ol {
+    margin-left: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ff9800;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #ffcc80;
+}
+
+footer {
+    background-color: #ffcc80;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-images img {
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+    margin: 0 10px;
+}
+
+section img {
+    width: 500px;
+    margin: 0 10px;
+}
+
+section div{
+    text-align: center;
+}
